@@ -1,16 +1,16 @@
-import { api } from "../api";
+// import { api } from "../api";
 
-class StreamService {
-    private readonly baseUrl = "/stream";
+// class StreamService {
+//     private readonly baseUrl = "/stream";
 
-    async getStreamUrl(id: number){
-        try {
-            const response = await api.get(`${this.baseUrl}/${id}`);
-            return response.data;
-        } catch {
-            throw new Error("Erro ao listar filmes");
-        }
-    }
-}
+//     async getStreamUrl(id: number){
+//         try {
+//             const response = await api.get(`${this.baseUrl}/${id}`);
+//             return response
+//         } catch {
+//             throw new Error("Erro ao obter URL de stream");
+//         }
+//     }
+// }
 
-export const streamService = new StreamService();
+// export const streamService = new StreamService();
